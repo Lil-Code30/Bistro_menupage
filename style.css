@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 231, 201);
+    /* display: flex;
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: column; */ 
+}
+.container{
+    width: 50vw;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+}
+
+.top-header{
+    position: relative;
+}
+.top-header hr:nth-of-type(1){
+    border: 0;
+    border-bottom: 3px solid black;
+}
+.top-header hr:nth-of-type(2){
+    border: 0;
+    border-bottom: 2px solid black;
+}
+.top-header-founded{
+    background-color: rgb(255, 231, 201);
+    width: 120px;
+    height: 70px;
+    padding: 1rem 0.3rem;
+    position: absolute;
+    top: -40px;
+    left: 400px;
+    text-align: center;
+}
+
+.middle-header{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100px; */
+}
+.middle-header .hours-box{
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+    padding: 0.5rem;
+    height: 200px
+}
+.middle-header .hours-box span{
+    display: block;
+}
+.middle-header .hours-box span:first-child{
+    color: rgb(0, 102, 255);
+    font-size: 3rem;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2rem;
+}
+.middle-header .hours-box span:nth-of-type(2){
+    color: rgb(255, 0, 106);
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.middle-header .logo-box{
+    width: 60%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle-header .logo-box h1{
+    font-size: 8.3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 3px  rgb(241, 240, 240),
+                8px 10px  rgb(38, 35, 35);
+}
+
+.middle-header hr,
+.middle-header .contact-box hr{
+    border: 0;
+    border-bottom: 2px solid black;
+    margin:0.3rem 0 0.5rem 0;
+}
+.middle-header .days{
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.middle-header .hours{
+    font-weight: 700;
+    margin: 0.3rem 0;
+}
+.middle-header .contact-box{
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+    padding: 0.5rem;
+    height: 200px;
+}
+.middle-header .contact-box img{
+    width: 70px;
+}
+.middle-header .contact-box > p{
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle-header .contact-box span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.middle-header .contact-box p:last-child{
+    font-size: small;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bottom-header{
+    margin-top: 1.5rem;
+}
+.bottom-header{
+    position: relative;
+}
+.bottom-header hr:nth-of-type(2){
+    border: 0;
+    border-bottom: 3px solid black;
+}
+.bottom-header hr:nth-of-type(1){
+    border: 0;
+    border-bottom: 2px solid black;
+}
+.bottom-header .bottom-header-title{
+    background-color: rgb(255, 231, 201);
+    position: absolute;
+    top: -20px;
+    left: 300px;
+    height: auto;
+    padding: 0 1rem;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#info-box{
+    background-color: black;
+    height: 55px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+#menu-container{
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr) ;
+    grid-template-areas: 
+    "menu-1 menu-2 menu-2 menu-3"
+    "menu-1 menu-2 menu-2 menu-3"
+    "pizza starter starter combo"
+    "pizza starter starter special"
+    "pizza drinks drinks special"
+    "pizza drinks-menu1 drinks-menu2 special";
+}
+#menu-img1{
+    grid-area: menu-1;
+}
+#menu-img1 img{
+    width: 100%;
+    height: 100%;    
+}
+#menu-img2{
+    grid-area: menu-2;
+}
+#menu-img2 img{
+    width: 100%; 
+    height: 100%;    
+}
+#menu-img3{
+    grid-area: menu-3;
+}
+#menu-img3 img{
+    width: 100%;   
+    height: 100%;  
+}
+.pizza-menu{
+    grid-area: pizza;
+    border: 2px solid black;
+    padding: 0;
+}
+.pizza-menu .pizza-menu-top{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pizza-menu .pizza-menu-top h3{
+    margin: 0;
+}
+.pizza-menu .pizza-menu-top h3:nth-child(1){
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 8px;
+}
+.pizza-menu .pizza-menu-top h3:nth-child(2){
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(231, 92, 92);
+    line-height: 45px;
+}
+.pizza-menu .pizza-menu-top h3:nth-child(3){
+    font-size: 1.3rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pizza-menu-lists{
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+}
+.pizza-menu-lists h3{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 6px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.pizza-menu-lists span{
+    align-self: center;
+    font-size: larger;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* starter menu */
+.starter-menu{
+    grid-area: starter;
+    border: 2px solid black;
+}
+
+/* combo */
+.combo{
+    grid-area: combo;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+/* special */
+.special{
+    grid-area: special;
+    border: 2px solid black;
+}
+
+/* drinks */
+.drinks{
+    grid-area: drinks;
+    background-color: black;
+    color: white;
+}
+
+/* drinks menu1 */
+.drinks-menu-01{
+    grid-area: drinks-menu1;
+}
+
+.drinks-menu-02{
+    grid-area: drinks-menu2;
+    background-color: black;
+}
